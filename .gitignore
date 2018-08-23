@@ -1,3 +1,11 @@
+# Other things not to upload
+*.pdf
+Lecture/
+SIS/
+*.tex
+reading/
+lateX/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
