@@ -1,8 +1,22 @@
 # Other things not to upload
 *.pdf
+
+
+# Remove latex stuff
+*.tex
+*.bbl
+*.blg
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.toc
+*.run.xml
+*.bcf
+
 Lecture/
 SIS/
-*.tex
 reading/
 lateX/
 
