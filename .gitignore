@@ -14,11 +14,13 @@
 *.toc
 *.run.xml
 *.bcf
+*.ipynb
 
 Lecture/
 SIS/
 reading/
 lateX/
+0_lab/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -29,6 +31,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.ipynb_checkpoints/
 .Python
 build/
 develop-eggs/
