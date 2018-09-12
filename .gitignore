@@ -19,10 +19,10 @@
 # Remove SIS things
 *.dat
 *.h5
-SIS/
 !SIS/parsers/CCI2/
+SIS/parsers
 SIS/parsers/CCI2/build-binaryreader-Desktop-Debug
-
+SIS/linux_drivers/drivers
 
 Lecture/
 reading/
