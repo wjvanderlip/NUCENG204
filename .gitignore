@@ -16,11 +16,20 @@
 *.bcf
 *.ipynb
 
+# Remove SIS things
+*.dat
+*.h5
+SIS/wrapper/*.so
+SIS/parsers/
+!SIS/parsers/CCI2/
+SIS/parsers/CCI2/build-binaryreader-Desktop-Debug
+
+
 Lecture/
-SIS/
 reading/
 lateX/
 0_lab/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
