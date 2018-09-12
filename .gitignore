@@ -19,8 +19,7 @@
 # Remove SIS things
 *.dat
 *.h5
-SIS/wrapper/*.so
-SIS/parsers/
+SIS/
 !SIS/parsers/CCI2/
 SIS/parsers/CCI2/build-binaryreader-Desktop-Debug
 
