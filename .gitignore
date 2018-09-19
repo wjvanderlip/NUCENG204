@@ -16,6 +16,7 @@
 *.bcf
 *.ipynb
 
+1_labhold/
 # Remove SIS things
 *.dat
 *.h5
@@ -24,7 +25,7 @@ SIS/parsers
 SIS/parsers/CCI2/build-binaryreader-Desktop-Debug
 SIS/linux_drivers/drivers
 sis_fork/
-
+SIS/wrapper/data
 Lecture/
 reading/
 lateX/
