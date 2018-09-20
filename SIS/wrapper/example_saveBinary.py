@@ -23,7 +23,7 @@ fig.canvas.draw()
 if __name__ == "__main__":
     # Required variables for sis setup
     configuration_file = 'config_new.ini'
-    output_file = 'DATA_co60_2.dat'
+    output_file = 'DATA_co60_32trigger.dat'
     toggle_save = True
     # Connect to and configure sis
     sis.connectToDAQ()
