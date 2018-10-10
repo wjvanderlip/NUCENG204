@@ -16,7 +16,7 @@ Data structure for Raw Event Data
 
 struct SISdata {
     unsigned long long timestamp;
-    unsigned short rawdata[4096];
+    unsigned short rawdata[1024];
     unsigned int adcid;
     unsigned int energy;
     int neighborplus;

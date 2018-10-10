@@ -9,7 +9,7 @@ plt.ion()
 # Import sis library. If you get an import error, wrapper has failed to
 # compile correctly
 import sis
-SIGNAL_LENGTH= 4096   # Length of raw data: depends on configuration
+SIGNAL_LENGTH= 1024 #4096   # Length of raw data: depends on configuration
 READ_INTERVAL=2.0   # Sleep interval between sis.acquiredata
 
 # Set up a plot to visualize the data coming from SIS
