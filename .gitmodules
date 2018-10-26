@@ -10,3 +10,6 @@
 [submodule "02_lab"]
 	path = 02_lab
 	url = https://github.com/NE204-Fall2018/wjvanderlip-lab2.git
+[submodule "03_lab"]
+	path = 03_lab
+	url = https://github.com/NE204-Fall2018/wjvanderlip-lab3.git

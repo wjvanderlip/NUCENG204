@@ -9,7 +9,7 @@ plt.ion()
 # Import sis library. If you get an import error, wrapper has failed to
 # compile correctly
 import sis
-SIGNAL_LENGTH= 1024 #4096   # Length of raw data: depends on configuration
+SIGNAL_LENGTH= 4096   # Length of raw data: depends on configuration
 READ_INTERVAL=2.0   # Sleep interval between sis.acquiredata
 
 # Set up a plot to visualize the data coming from SIS
@@ -23,7 +23,7 @@ fig.canvas.draw()
 if __name__ == "__main__":
     # Required variables for sis setup
     configuration_file = 'config_new.ini'
-    output_file = 'DATA_co60Cs137Am241_7trigger.dat'
+    output_file = 'DATA_co60_labr_co60am241cs137.dat'
     toggle_save = True
     # Connect to and configure sis
     sis.connectToDAQ()
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     # Setup a run loop
     generation = 0
-
+    tots = 0
     while True:
         generation += 1
 
@@ -44,11 +44,12 @@ if __name__ == "__main__":
         # acquired data
 
         ts, en, ch, trig, sigs = sis.acquireDataWithRaw(toggle_save)
-
+        tots += len(ts)
         print 'Generation %s' %(generation)
         print '  %s readouts collected' %len(ts)
         uniq_ch = np.unique(ch)
         print '  %s unique channels: %s' %(len(uniq_ch), uniq_ch)
+        print ' %s Total signals in dataset: '%(tots)
         # Update the raw signal
         sig = sigs[0,:]
         ax_raw.lines[0].set_ydata(sig)
